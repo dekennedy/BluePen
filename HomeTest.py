@@ -83,3 +83,41 @@ plt.bar(new_xvals, exponential_data, width= 0.3, color = 'red')
 
 
 # %%
+
+
+# stacked bar charts are also possible
+plt.figure()
+xvals = range(len(linear_data))
+plt.bar(xvals, linear_data, width = 0.3, color='b')
+plt.bar(xvals, exponential_data, width = 0.3, bottom=linear_data, color='r')
+
+# %%
+
+# or use barh for horizontal bar charts
+plt.figure()
+xvals = range(len(linear_data))
+plt.barh(xvals, linear_data, height = 0.3, color='b')
+plt.barh(xvals, exponential_data, height = 0.3, left=linear_data, color='r')
+
+
+
+# %%
+
+
+plt.figure()
+xvals = range(len(linear_data))
+plt.barh(xvals, linear_data, height = 0.3, color='b')
+
+new_xvals = []
+
+for v in xvals:
+    new_xvals.append(v+0.3)
+
+
+plt.barh(new_xvals, exponential_data, height = 0.3, color='r')
+
+
+
+
+
+# %%
