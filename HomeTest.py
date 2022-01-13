@@ -38,3 +38,48 @@ for item in x.get_ticklabels():
 
 
 # %%
+
+#Bar Charts
+
+import pandas as pd
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+
+linear_data = np.array([1,2,3,4,5,6,7,8])
+exponential_data = linear_data**2
+
+plt.figure()
+xvals = range(len(linear_data))
+plt.bar(xvals, linear_data, width=0.3)
+
+
+#add new Bars
+
+new_xvals = []
+
+for v in xvals:
+    new_xvals.append(v+0.3)
+
+plt.bar(new_xvals, exponential_data, width= 0.3, color = 'red')
+
+
+
+
+# %%
+
+
+#add new Bars
+
+new_xvals = []
+
+for v in xvals:
+    new_xvals.append(v+.03)
+
+plt.bar(new_xvals, exponential_data, width= 0.3, color = 'red')
+
+
+
+
+# %%
