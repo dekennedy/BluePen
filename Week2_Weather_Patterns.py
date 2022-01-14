@@ -25,6 +25,10 @@ plt.xticks(pos, languages, alpha=0.8)
 # remove the Y label since bars are directly labeled
 # plt.ylabel('% Popularity', alpha=0.8)
 
+
+
+
+
 #Add title
 plt.title('Top 5 Languages for Math & Data \nby % popularity on Stack Overflow', alpha=0.8)
 
