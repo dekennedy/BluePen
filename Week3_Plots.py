@@ -43,3 +43,27 @@ ax2 = plt.subplot(1, 2, 2, sharey=ax1)
 plt.plot(exponential_data, '-x')
 
 # %%
+
+##Histogram
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# repeat with number of bins set to 100
+fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, sharex=True)
+axs = [ax1,ax2,ax3,ax4]
+
+for n in range(0,len(axs)):
+    sample_size = 10**(n+1)
+    sample = np.random.normal(loc=0.0, scale=1.0, size=sample_size)
+    axs[n].hist(sample, bins=100)
+    axs[n].set_title('n={}'.format(sample_size))
+
+
+
+
+
+
+
+
+# %%
