@@ -27,10 +27,19 @@ exponential_data = linear_data**2
 plt.subplot(1,2,2)
 plt.plot(exponential_data, '-o')
 
+## add expo to the first plot
+plt.subplot(1,2,1)
+plt.plot(exponential_data, '-x')
 
 
+# %%
 
-
-
+##Lock Y axis
+plt.figure()
+ax1 = plt.subplot(1, 2, 1)
+plt.plot(linear_data, '-o')
+# pass sharey=ax1 to ensure the two subplots share the same y axis
+ax2 = plt.subplot(1, 2, 2, sharey=ax1)
+plt.plot(exponential_data, '-x')
 
 # %%
