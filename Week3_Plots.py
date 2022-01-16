@@ -85,10 +85,7 @@ df = pd.DataFrame({'normal': normal_sample,
                    'gamma': gamma_sample})
 
 
-
 df.describe()                  
-
-
 
 
 
@@ -96,15 +93,28 @@ df.describe()
 
 plt.figure()
 # create a boxplot of the normal data, assign the output to a variable to supress output
-_ = plt.boxplot(df['normal'])
+
+plt.boxplot(df['normal'], whis='range')
+
+# plt.show(block=True)
 
 
 
 # %%
 
-plt.figure()
-plt.hist(df['gamma'], bins=100)
 
-plt.show
+
+
+plt.figure()
+
+Y = np.random.normal(loc=0.0, scale=1.0, size=10000)
+X = np.random.random(size=10000)
+plt.hist2d(X, Y, bins=25)
+
+plt.show()
+
+
+
+
 
 # %%
