@@ -94,7 +94,7 @@ df.describe()
 plt.figure()
 # create a boxplot of the normal data, assign the output to a variable to supress output
 
-plt.boxplot(df['normal'], whis='range')
+plt.boxplot(df['normal'])
 
 # plt.show(block=True)
 
