@@ -115,6 +115,11 @@ plt.show()
 # %%
 
 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+
 
 plt.figure()
 data = np.random.rand(10)
