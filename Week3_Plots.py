@@ -115,6 +115,11 @@ plt.show()
 # %%
 
 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+
 
 plt.figure()
 data = np.random.rand(10)
@@ -135,7 +140,7 @@ plt.gcf().canvas.mpl_connect('button_press_event', onclick)
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.animation as animation
-%matplotlib notebook
+# %matplotlib notebook
 
 
 
@@ -194,6 +199,46 @@ def update(curr):
 
 a = animation.FuncAnimation(fig, update, interval=100)
 
+
+
+# %%
+
+# Use the following data for this assignment:
+
+import pandas as pd
+import numpy as np
+
+np.random.seed(12345)
+
+df = pd.DataFrame([np.random.normal(32000,200000,3650), 
+                   np.random.normal(43000,100000,3650), 
+                   np.random.normal(43500,140000,3650), 
+                   np.random.normal(48000,70000,3650)], 
+                  index=[1992,1993,1994,1995])
+
+
+
+
+
+# %%
+
+
+
+# Use the following data for this assignment:
+
+import pandas as pd
+import numpy as np
+
+np.random.seed(12345)
+
+df = pd.DataFrame([np.random.normal(32000,200000,3650), 
+                   np.random.normal(43000,100000,3650), 
+                   np.random.normal(43500,140000,3650), 
+                   np.random.normal(48000,70000,3650)], 
+                  index=[1992,1993,1994,1995])
+
+
+df.head()
 
 
 # %%
