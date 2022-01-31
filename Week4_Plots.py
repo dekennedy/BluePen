@@ -23,3 +23,5 @@ df.plot(); # add a semi-colon to the end of the plotting call to suppress unwant
 # create a scatter plot of columns 'A' and 'C', with changing color (c) and size (s) based on column 'B'
 df.plot.scatter('A', 'C', c='B', s=df['B'], colormap='viridis')
 # %%
+df.plot.scatter('A', 'C', c='B', s=df['B'])
+# %%
