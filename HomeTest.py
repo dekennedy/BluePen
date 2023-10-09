@@ -100,6 +100,8 @@ plt.barh(xvals, linear_data, height = 0.3, color='b')
 plt.barh(xvals, exponential_data, height = 0.3, left=linear_data, color='r')
 
 
+## testing update
+
 
 # %%
 
